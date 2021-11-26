@@ -1,0 +1,82 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../image/458780.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: 0.7;
+    z-index: -1;
+}
+.user-profile{
+    background-color: #dcdcdc;
+    margin-top: 4%;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 1rem ;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+.profil-top{
+    background: linear-gradient(90deg, hsla(175, 79%, 63%, 1) 0%, hsla(82, 96%, 57%, 1) 100%);
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+}
+.profil-top img{
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+.profil-top .profile-info{
+    margin-top: 1rem;
+}
+.profil-bottom{
+    padding: 3rem 3rem 1rem 3rem;
+}
+.profil-bottom .profile-info{
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(50, 50,93,0.25) 0px 13px 27px -5px , rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: all 0.5s ease;
+}
+.profil-bottom .profile-info .material-icons{
+    margin-right: 0.5rem;
+    color: gray;
+}
+.profil-bottom .profile-info:hover{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px , rgba(60, 64, 67, 0.15) 0px 1px 3px 0px;
+}
+button{
+    color: rgb(13, 70, 38) !important;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    box-shadow: rgba(50, 50,93,0.25) 0px 13px 27px -5px , rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: all 0.5s ease;
+}
+button:hover{
+    background: linear-gradient(90deg, hsla(175, 79%, 63%, 1) 0%, hsla(82, 96%, 57%, 1) 100%);
+    border: none;
+    color: rgb(16, 3, 136) !important;
+}
